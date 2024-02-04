@@ -8,7 +8,7 @@ class Solution:
         for i in range(len(nums)-1):
             left_sum = prefix[i]
             right_sum = prefix[-1] - prefix[i]
-            if left_sum > right_sum:
+            if left_sum >= right_sum:
                 ans += 1
 
         return ans
